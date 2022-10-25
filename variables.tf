@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "profile" {
-  default = "personal"
+  default = "default"
 }
 
 variable "generated_key_name" {
