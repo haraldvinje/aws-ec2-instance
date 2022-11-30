@@ -1,6 +1,9 @@
+resource "aws_default_vpc" "default" {}
+
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow ssh inbound traffic"
+  vpc_id      = aws_default_vpc.default.id
 
   ingress {
     description = "SSH from everywhere"
