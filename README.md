@@ -16,8 +16,6 @@ FYI: The resources created in AWS should incur no costs, but you can never be su
 
 ## Set up
 
-The named profile is set to `default`, but can be changed by changing the `profile` default variable in the [variables.tf](variables.tf) file.
-
 Initialize terraform the first time: `terraform init`
 
 Display resources to be created (optional): `terraform plan`
